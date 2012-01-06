@@ -62,15 +62,24 @@
 #pragma mark - HowDoILook Logic
 
 - (IBAction)takePicture:(id)sender {
+    // No Camera?
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        [[[UIAlertView alloc] initWithTitle:nil message:@"Camera Required" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        return;
+    }
+        
     // Take the picture
     NSLog(@"Take the Picture");
-        
+
     // Create image picker controller
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
         
     // Set source to the camera
     imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
-        
+    
+    // Front
+    imagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    
     // Delegate is self
     imagePicker.delegate = self;
         
