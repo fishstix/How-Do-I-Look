@@ -22,6 +22,24 @@
 - (void) openHome;
 @end
 
+@implementation MasterViewController(Private)
+
+- (void) defaultFadeOut {
+//    splashView = [[UIImageView alloc] initWithFrame:CGRectMake(0,0, 320, 480)];
+//    splashView.image = [UIImage imageNamed:@"Default.png"];
+//    [window addSubview:splashView];
+//    [window bringSubviewToFront:splashView];
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:0.5];
+//    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:window cache:YES];
+//    [UIView setAnimationDelegate:self]; 
+//    [UIView setAnimationDidStopSelector:@selector(startupAnimationDone:finished:context:)];
+//    splashView.alpha = 0.0;
+//    [UIView commitAnimations];
+}
+
+@end
+
 @implementation MasterViewController
 
 @synthesize facebook = _facebook;
@@ -35,7 +53,7 @@
         self.rootNavigationController = navController;
         
         // Set Up FB
-        self.facebook = [[Facebook alloc] initWithAppId:kFBAppId andDelegate:self];
+        self.facebook = [[[Facebook alloc] initWithAppId:kFBAppId andDelegate:self] autorelease];
         [self initialize];
     }
     
@@ -59,6 +77,9 @@
     } else {
         [self openHome];
     }
+    
+    // Fade from Default
+    [self defaultFadeOut];
 }
 
 #pragma mark - HowDoILook Logic
@@ -71,6 +92,7 @@
     
     [self.rootNavigationController setViewControllers:[NSArray arrayWithObjects:signInController, prevController, nil ] animated:NO];
     [self.rootNavigationController popToRootViewControllerAnimated:YES];
+    [signInController release];
 }
 
 - (void) openHome {
@@ -78,6 +100,7 @@
     HomeViewController *homeController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     homeController.facebook = self.facebook;
     [self.rootNavigationController setViewControllers:[NSArray arrayWithObject:homeController] animated:YES];
+    [homeController release];
 }
 
 #pragma mark - Facebook

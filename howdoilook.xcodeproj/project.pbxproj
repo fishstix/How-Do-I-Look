@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728C9CB814CA979400D4A0EF /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CB614CA979400D4A0EF /* DefaultViewController.m */; };
+		728C9CB914CA979400D4A0EF /* DefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728C9CB714CA979400D4A0EF /* DefaultViewController.xib */; };
+		728C9CBE14CA9CE700D4A0EF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CBD14CA9CE700D4A0EF /* MBProgressHUD.m */; };
+		728C9CC214CA9F0D00D4A0EF /* FacebookProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CC114CA9F0D00D4A0EF /* FacebookProvider.m */; };
+		728C9CC614CAA1EA00D4A0EF /* FBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CC514CAA1EA00D4A0EF /* FBPerson.m */; };
+		728C9CD314CAA42000D4A0EF /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CD214CAA42000D4A0EF /* DataProvider.m */; };
+		728C9CD614CAABC200D4A0EF /* HDILImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CD514CAABC200D4A0EF /* HDILImage.m */; };
+		728C9CED14CAB66600D4A0EF /* FacebookRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CEC14CAB66600D4A0EF /* FacebookRequest.m */; };
 		7299A50014B58B1B00097475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299A4FF14B58B1B00097475 /* UIKit.framework */; };
 		7299A50214B58B1B00097475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299A50114B58B1B00097475 /* Foundation.framework */; };
 		7299A50414B58B1B00097475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299A50314B58B1B00097475 /* CoreGraphics.framework */; };
@@ -60,6 +68,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		728C9CB514CA979400D4A0EF /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		728C9CB614CA979400D4A0EF /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		728C9CB714CA979400D4A0EF /* DefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultViewController.xib; sourceTree = "<group>"; };
+		728C9CBC14CA9CE700D4A0EF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../../mbprogresshud/MBProgressHUD.h; sourceTree = "<group>"; };
+		728C9CBD14CA9CE700D4A0EF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../../mbprogresshud/MBProgressHUD.m; sourceTree = "<group>"; };
+		728C9CC014CA9F0D00D4A0EF /* FacebookProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookProvider.h; sourceTree = "<group>"; };
+		728C9CC114CA9F0D00D4A0EF /* FacebookProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookProvider.m; sourceTree = "<group>"; };
+		728C9CC414CAA1EA00D4A0EF /* FBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPerson.h; sourceTree = "<group>"; };
+		728C9CC514CAA1EA00D4A0EF /* FBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPerson.m; sourceTree = "<group>"; };
+		728C9CD114CAA41F00D4A0EF /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		728C9CD214CAA42000D4A0EF /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		728C9CD414CAABC200D4A0EF /* HDILImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDILImage.h; sourceTree = "<group>"; };
+		728C9CD514CAABC200D4A0EF /* HDILImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDILImage.m; sourceTree = "<group>"; };
+		728C9CEB14CAB66600D4A0EF /* FacebookRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookRequest.h; sourceTree = "<group>"; };
+		728C9CEC14CAB66600D4A0EF /* FacebookRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookRequest.m; sourceTree = "<group>"; };
 		7299A4FB14B58B1B00097475 /* howdoilook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howdoilook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299A4FF14B58B1B00097475 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7299A50114B58B1B00097475 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -146,6 +169,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		728C9CB414CA976D00D4A0EF /* default */ = {
+			isa = PBXGroup;
+			children = (
+				728C9CB514CA979400D4A0EF /* DefaultViewController.h */,
+				728C9CB614CA979400D4A0EF /* DefaultViewController.m */,
+				728C9CB714CA979400D4A0EF /* DefaultViewController.xib */,
+			);
+			name = default;
+			sourceTree = "<group>";
+		};
+		728C9CBA14CA987F00D4A0EF /* flow */ = {
+			isa = PBXGroup;
+			children = (
+				7299A56B14B58E1600097475 /* MasterViewController.h */,
+				7299A56C14B58E1600097475 /* MasterViewController.m */,
+			);
+			name = flow;
+			sourceTree = "<group>";
+		};
+		728C9CBB14CA9CC400D4A0EF /* mbprogresshud */ = {
+			isa = PBXGroup;
+			children = (
+				728C9CBC14CA9CE700D4A0EF /* MBProgressHUD.h */,
+				728C9CBD14CA9CE700D4A0EF /* MBProgressHUD.m */,
+			);
+			name = mbprogresshud;
+			sourceTree = "<group>";
+		};
+		728C9CBF14CA9EC000D4A0EF /* provider */ = {
+			isa = PBXGroup;
+			children = (
+				728C9CD114CAA41F00D4A0EF /* DataProvider.h */,
+				728C9CD214CAA42000D4A0EF /* DataProvider.m */,
+				728C9CC014CA9F0D00D4A0EF /* FacebookProvider.h */,
+				728C9CC114CA9F0D00D4A0EF /* FacebookProvider.m */,
+				728C9CEB14CAB66600D4A0EF /* FacebookRequest.h */,
+				728C9CEC14CAB66600D4A0EF /* FacebookRequest.m */,
+			);
+			name = provider;
+			sourceTree = "<group>";
+		};
+		728C9CC314CAA19000D4A0EF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				728C9CC414CAA1EA00D4A0EF /* FBPerson.h */,
+				728C9CC514CAA1EA00D4A0EF /* FBPerson.m */,
+				728C9CD414CAABC200D4A0EF /* HDILImage.h */,
+				728C9CD514CAABC200D4A0EF /* HDILImage.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		7299A4F014B58B1B00097475 = {
 			isa = PBXGroup;
 			children = (
@@ -179,12 +254,13 @@
 		7299A50514B58B1B00097475 /* howdoilook */ = {
 			isa = PBXGroup;
 			children = (
+				728C9CC314CAA19000D4A0EF /* data */,
+				728C9CBF14CA9EC000D4A0EF /* provider */,
+				728C9CBA14CA987F00D4A0EF /* flow */,
 				7299A53214B58C4400097475 /* lib */,
 				7299A56214B58D2700097475 /* views */,
 				7299A50E14B58B1B00097475 /* AppDelegate.h */,
 				7299A50F14B58B1B00097475 /* AppDelegate.m */,
-				7299A56B14B58E1600097475 /* MasterViewController.h */,
-				7299A56C14B58E1600097475 /* MasterViewController.m */,
 				7299A50614B58B1B00097475 /* Supporting Files */,
 			);
 			path = howdoilook;
@@ -224,6 +300,7 @@
 		7299A53214B58C4400097475 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				728C9CBB14CA9CC400D4A0EF /* mbprogresshud */,
 				7299A53414B58C5D00097475 /* facebook */,
 			);
 			name = lib;
@@ -281,6 +358,7 @@
 		7299A56214B58D2700097475 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				728C9CB414CA976D00D4A0EF /* default */,
 				7299A56A14B58DF700097475 /* abstract */,
 				7299A56414B58D3C00097475 /* howdoilook */,
 				7299A56314B58D3400097475 /* splash */,
@@ -417,6 +495,7 @@
 				7299A57314B5919500097475 /* HomeViewController.xib in Resources */,
 				7299A57814B5920700097475 /* CameraViewController.xib in Resources */,
 				7299A57D14B5921700097475 /* ConfirmViewController.xib in Resources */,
+				728C9CB914CA979400D4A0EF /* DefaultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +549,13 @@
 				7299A57C14B5921700097475 /* ConfirmViewController.m in Sources */,
 				7299A58014B5976500097475 /* InProcessViewController.m in Sources */,
 				7299A58314B599D500097475 /* HowDoILookViewController.m in Sources */,
+				728C9CB814CA979400D4A0EF /* DefaultViewController.m in Sources */,
+				728C9CBE14CA9CE700D4A0EF /* MBProgressHUD.m in Sources */,
+				728C9CC214CA9F0D00D4A0EF /* FacebookProvider.m in Sources */,
+				728C9CC614CAA1EA00D4A0EF /* FBPerson.m in Sources */,
+				728C9CD314CAA42000D4A0EF /* DataProvider.m in Sources */,
+				728C9CD614CAABC200D4A0EF /* HDILImage.m in Sources */,
+				728C9CED14CAB66600D4A0EF /* FacebookRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

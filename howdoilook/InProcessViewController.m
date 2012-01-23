@@ -60,4 +60,12 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+#pragma mark - Dealloc
+
+- (void) dealloc {
+    [_facebook release];
+    
+    [super dealloc];
+}
+
 @end

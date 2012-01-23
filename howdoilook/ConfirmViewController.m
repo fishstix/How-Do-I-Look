@@ -8,6 +8,9 @@
 
 #import "ConfirmViewController.h"
 
+#import "FacebookProvider.h"
+#import "MBProgressHUD.h"
+
 @interface ConfirmViewController() <FBDialogDelegate, FBRequestDelegate>
 @end
 
@@ -15,23 +18,6 @@
 
 @synthesize image = _image;
 @synthesize imageView = _imageView;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
@@ -46,49 +32,49 @@
 #pragma mark - HowDoILook Logic
 
 - (IBAction)confirm:(id)sender {
+    // Loading Screen
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+    [self.navigationController.view addSubview:hud];
+    [hud show:YES];
+    
     // Post
     NSLog(@"Post to FB");
     
-    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   kFBAppId, @"app_id",
-                                   @"Hey Buddy!", @"message",
-                                   self.image, @"picture",
-                                   nil];
-    [self.facebook requestWithGraphPath:@"me/photos"
-                                    andParams:params
-                                andHttpMethod:@"POST"
-                                  andDelegate:self];
+    HDILImage *hdilImage = [[HDILImage alloc] initWithFBPostID:nil image:self.image description:kDefaultImgDescription fashionistas:[NSArray array]];
     
+    FacebookProvider *fbProvider = [[FacebookProvider alloc] initWithFacebook:self.facebook];
+    [fbProvider postImage:hdilImage onCompletion:^() {
+        [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }onFailure:^(NSError *error) {
+        [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
+        NSString *message = [error localizedDescription];
+        [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    }];
+
     
-    NSMutableDictionary *params_ = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                    kFBAppId, @"app_id",
-                                    @"", @"link",
-                                    @"", @"picture",
-                                    kAppTitle, @"name",
-                                    @"Get feedback on how you're looking", @"caption",
-                                    @"So how DO you look?", @"description",
-                                    @"How Do I Look?", @"message",
-                                    nil];
+//    NSMutableDictionary *params_ = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+//                                    kFBAppId, @"app_id",
+//                                    @"", @"link",
+//                                    @"", @"picture",
+//                                    kAppTitle, @"name",
+//                                    @"Get feedback on how you're looking", @"caption",
+//                                    @"So how DO you look?", @"description",
+//                                    @"How Do I Look?", @"message",
+//                                    nil];
 
 //    [self.facebook dialog:@"feed" andParams:params andDelegate:self];
 }
 
-#pragma mark - Facebook
 
-#pragma mark - Dialog
+#pragma mark - Dealloc
 
-- (void) dialogDidComplete:(FBDialog *)dialog {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+- (void) dealloc {
+    [_image release];
+    
+    [_imageView release];
+    
+    [super dealloc];
 }
 
-- (void) dialogDidNotComplete:(FBDialog *)dialog {
-    [[[UIAlertView alloc] initWithTitle:nil message:@"Uh Oh!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
-}
-
-#pragma mark - Request
-
-- (void)request:(FBRequest *)request didLoad:(id)result {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
-@end
+ @end

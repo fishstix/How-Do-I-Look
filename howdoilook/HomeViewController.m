@@ -17,23 +17,6 @@
 
 @synthesize facebook = _facebook;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -44,6 +27,7 @@
     // Logout
     UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"logout" style:UIBarButtonItemStylePlain target:self action:@selector(logout:)];
     self.navigationItem.rightBarButtonItem = logoutButton;
+    [logoutButton release];
 }
 
 - (void)viewDidUnload
@@ -83,7 +67,7 @@
     
 - (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     // Access the uncropped image from info dictionary
-    UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    UIImage *image = [UIImage imageWithData:UIImageJPEGRepresentation([info objectForKey:@"UIImagePickerControllerOriginalImage"], 0.0f)];
         
     // Pass the image from camera to method that will email the same
     // A delay is needed so camera view can be dismissed
@@ -97,6 +81,7 @@
     confirmController.facebook = self.facebook;
     confirmController.image = image;
     [self.navigationController pushViewController:confirmController animated:NO];
+    [confirmController release];
         
     // Dismiss the camera
     [self dismissModalViewControllerAnimated:YES];
@@ -104,6 +89,14 @@
 
 - (IBAction)logout:(id)sender {
     [self.facebook logout];
+}
+
+#pragma mark - Dealloc
+
+- (void) dealloc {
+    [_facebook release];
+    
+    [super dealloc];
 }
 
 @end
