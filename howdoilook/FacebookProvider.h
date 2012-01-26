@@ -17,6 +17,7 @@
 typedef void (^FBRequestErrorResponse)(NSError *error);
 typedef void (^FBRequestVoidResponse)();
 typedef void (^FBRequestArrayResponse)(NSArray *items);
+typedef void (^FBRequestStringResponse)(NSString *str);
 
 @interface FacebookProvider : NSObject {
     @private
@@ -34,5 +35,8 @@ typedef void (^FBRequestArrayResponse)(NSArray *items);
 // Access Friends
 - (void) getAllFriends:(FBRequestArrayResponse)completionBlock onFailure:(FBRequestErrorResponse)failureBlock;
 - (void) getFashionistas:(FBRequestArrayResponse)completionBlock onFailure:(FBRequestErrorResponse)failureBlock;
+
+// Access User
+- (void) getFBUID:(FBRequestStringResponse)completionBlock onFailure:(FBRequestErrorResponse)failureBlock;
 
 @end

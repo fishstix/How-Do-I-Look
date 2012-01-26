@@ -55,6 +55,8 @@
 - (IBAction)signin:(id)sender {
     NSArray *permissions = [[NSArray alloc] initWithObjects:@"user_likes", @"read_stream", @"publish_stream", @"manage_friendlists", nil];
     [self.facebook authorize:permissions];
+    
+    [permissions release];
 }
 
 @end

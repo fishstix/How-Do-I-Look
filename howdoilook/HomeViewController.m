@@ -10,12 +10,14 @@
 
 #import "ConfirmViewController.h"
 
-@interface HomeViewController() <UIImagePickerControllerDelegate>
+@interface HomeViewController() <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @end
 
 @implementation HomeViewController
 
 @synthesize facebook = _facebook;
+
+@synthesize prevImages = _prevImages;
 
 #pragma mark - View lifecycle
 
@@ -28,6 +30,9 @@
     UIBarButtonItem *logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"logout" style:UIBarButtonItemStylePlain target:self action:@selector(logout:)];
     self.navigationItem.rightBarButtonItem = logoutButton;
     [logoutButton release];
+    
+    // Set Up Views
+//    self.prevImages 
 }
 
 - (void)viewDidUnload
@@ -48,7 +53,9 @@
 - (IBAction)takePicture:(id)sender {
     // No Camera?
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        [[[UIAlertView alloc] initWithTitle:nil message:@"Camera Required" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        UIAlertView *noCameraAlert = [[UIAlertView alloc] initWithTitle:nil message:@"Camera Required" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [noCameraAlert show];
+        [noCameraAlert release];
         return;
     }
         

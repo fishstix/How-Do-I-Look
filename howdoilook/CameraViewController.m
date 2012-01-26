@@ -10,7 +10,7 @@
 
 #import "ConfirmViewController.h"
 
-@interface CameraViewController() <UIImagePickerControllerDelegate>
+@interface CameraViewController() <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @end
 
 @implementation CameraViewController
@@ -91,6 +91,7 @@
     confirmController.facebook = self.facebook;
     confirmController.image = image;
     [self.navigationController pushViewController:confirmController animated:NO];
+    [confirmController release];
     
     // Dismiss the camera
     [self dismissModalViewControllerAnimated:YES];

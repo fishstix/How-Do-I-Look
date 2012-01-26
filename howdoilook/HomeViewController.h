@@ -11,11 +11,20 @@
 #import "HowDoILookViewController.h"
 #import "FBConnect.h"
 
+#import "FashionistasSettingsView.h"
+#import "PrevHDILImages.h"
+
 @interface HomeViewController : HowDoILookViewController {
     Facebook *_facebook;
+    
+    // UI
+    PrevHDILImages *_prevImages;
 }
 
 @property (nonatomic, retain) Facebook *facebook;
+
+// UI
+@property (nonatomic, retain) IBOutlet PrevHDILImages *prevImages;
 
 - (IBAction)takePicture:(id)sender;
 - (IBAction)logout:(id)sender;

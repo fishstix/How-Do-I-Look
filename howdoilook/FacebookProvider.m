@@ -44,6 +44,8 @@ static NSString *fashionistasFriendsListID = nil;
     } onFailure:failureBlock];
     
     [request start];
+    
+    [request release];
 }
 
 #pragma mark - Get Friends Lists
@@ -59,6 +61,7 @@ static NSString *fashionistasFriendsListID = nil;
     
     [request start];
     
+    [request release];
 }
 
 // TODO store fashionistas ID
@@ -89,10 +92,18 @@ static NSString *fashionistasFriendsListID = nil;
             }
             completionBlock([NSArray array]);
         }onFailure:failureBlock];
-    } else {
-        [request start];
+        
+        [fashionistasIDRequest start];
+        [fashionistasIDRequest release];
     }
     
+    [request start];
+    [request release];    
+}
+
+- (void) getFBUID:(FBRequestStringResponse)completionBlock onFailure:(FBRequestErrorResponse)failureBlock {
+    // TODO
+    completionBlock(@"704747");
 }
 
 @end

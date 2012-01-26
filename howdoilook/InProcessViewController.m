@@ -52,6 +52,7 @@
     self.navigationItem.leftBarButtonItem = cancelButton;
     // Hide Back
     [self.navigationItem setHidesBackButton:YES];
+    [cancelButton release];
 }
 
 #pragma mark - HowDoILook Logic

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72782EF414CE170B00A84C35 /* PrevHDILImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EF314CE170B00A84C35 /* PrevHDILImages.m */; };
+		72782EF514CE170B00A84C35 /* PrevHDILImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EF314CE170B00A84C35 /* PrevHDILImages.m */; };
+		72782EF814CE172700A84C35 /* FashionistasSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EF714CE172700A84C35 /* FashionistasSettingsView.m */; };
+		72782EF914CE172700A84C35 /* FashionistasSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EF714CE172700A84C35 /* FashionistasSettingsView.m */; };
+		72782EFC14CE175200A84C35 /* FashionistasScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EFB14CE175200A84C35 /* FashionistasScrollView.m */; };
+		72782EFD14CE175200A84C35 /* FashionistasScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EFB14CE175200A84C35 /* FashionistasScrollView.m */; };
+		72782F0014CE177500A84C35 /* HDILImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EFF14CE177500A84C35 /* HDILImageView.m */; };
+		72782F0114CE177500A84C35 /* HDILImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782EFF14CE177500A84C35 /* HDILImageView.m */; };
+		72782F0514CE198800A84C35 /* HDILImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782F0414CE198800A84C35 /* HDILImageCache.m */; };
+		72782F0614CE198800A84C35 /* HDILImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782F0414CE198800A84C35 /* HDILImageCache.m */; };
+		72782F0914CE1B4C00A84C35 /* SettingsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782F0814CE1B4C00A84C35 /* SettingsProvider.m */; };
+		72782F0A14CE1B4C00A84C35 /* SettingsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 72782F0814CE1B4C00A84C35 /* SettingsProvider.m */; };
 		728C9CB814CA979400D4A0EF /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CB614CA979400D4A0EF /* DefaultViewController.m */; };
 		728C9CB914CA979400D4A0EF /* DefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728C9CB714CA979400D4A0EF /* DefaultViewController.xib */; };
 		728C9CBE14CA9CE700D4A0EF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 728C9CBD14CA9CE700D4A0EF /* MBProgressHUD.m */; };
@@ -68,6 +80,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		72782EF214CE170B00A84C35 /* PrevHDILImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrevHDILImages.h; sourceTree = "<group>"; };
+		72782EF314CE170B00A84C35 /* PrevHDILImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrevHDILImages.m; sourceTree = "<group>"; };
+		72782EF614CE172700A84C35 /* FashionistasSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionistasSettingsView.h; sourceTree = "<group>"; };
+		72782EF714CE172700A84C35 /* FashionistasSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionistasSettingsView.m; sourceTree = "<group>"; };
+		72782EFA14CE175200A84C35 /* FashionistasScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionistasScrollView.h; sourceTree = "<group>"; };
+		72782EFB14CE175200A84C35 /* FashionistasScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionistasScrollView.m; sourceTree = "<group>"; };
+		72782EFE14CE177500A84C35 /* HDILImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDILImageView.h; sourceTree = "<group>"; };
+		72782EFF14CE177500A84C35 /* HDILImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDILImageView.m; sourceTree = "<group>"; };
+		72782F0314CE198800A84C35 /* HDILImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDILImageCache.h; sourceTree = "<group>"; };
+		72782F0414CE198800A84C35 /* HDILImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDILImageCache.m; sourceTree = "<group>"; };
+		72782F0714CE1B4B00A84C35 /* SettingsProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsProvider.h; sourceTree = "<group>"; };
+		72782F0814CE1B4C00A84C35 /* SettingsProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsProvider.m; sourceTree = "<group>"; };
 		728C9CB514CA979400D4A0EF /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
 		728C9CB614CA979400D4A0EF /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
 		728C9CB714CA979400D4A0EF /* DefaultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultViewController.xib; sourceTree = "<group>"; };
@@ -169,6 +193,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72782EEE14CE167F00A84C35 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				72782EF114CE16BF00A84C35 /* hdilimage */,
+				72782EF014CE16B200A84C35 /* fashionistas */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		72782EEF14CE16A800A84C35 /* fashionistas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = fashionistas;
+			sourceTree = "<group>";
+		};
+		72782EF014CE16B200A84C35 /* fashionistas */ = {
+			isa = PBXGroup;
+			children = (
+				72782EF614CE172700A84C35 /* FashionistasSettingsView.h */,
+				72782EF714CE172700A84C35 /* FashionistasSettingsView.m */,
+				72782EFA14CE175200A84C35 /* FashionistasScrollView.h */,
+				72782EFB14CE175200A84C35 /* FashionistasScrollView.m */,
+			);
+			name = fashionistas;
+			sourceTree = "<group>";
+		};
+		72782EF114CE16BF00A84C35 /* hdilimage */ = {
+			isa = PBXGroup;
+			children = (
+				72782EF214CE170B00A84C35 /* PrevHDILImages.h */,
+				72782EF314CE170B00A84C35 /* PrevHDILImages.m */,
+				72782EFE14CE177500A84C35 /* HDILImageView.h */,
+				72782EFF14CE177500A84C35 /* HDILImageView.m */,
+			);
+			name = hdilimage;
+			sourceTree = "<group>";
+		};
+		72782F0214CE197600A84C35 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				72782F0314CE198800A84C35 /* HDILImageCache.h */,
+				72782F0414CE198800A84C35 /* HDILImageCache.m */,
+			);
+			name = cache;
+			sourceTree = "<group>";
+		};
+		72782F1514CE2C7F00A84C35 /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
 		728C9CB414CA976D00D4A0EF /* default */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,13 +257,13 @@
 			name = default;
 			sourceTree = "<group>";
 		};
-		728C9CBA14CA987F00D4A0EF /* flow */ = {
+		728C9CBA14CA987F00D4A0EF /* navigationcontrol */ = {
 			isa = PBXGroup;
 			children = (
 				7299A56B14B58E1600097475 /* MasterViewController.h */,
 				7299A56C14B58E1600097475 /* MasterViewController.m */,
 			);
-			name = flow;
+			name = navigationcontrol;
 			sourceTree = "<group>";
 		};
 		728C9CBB14CA9CC400D4A0EF /* mbprogresshud */ = {
@@ -200,6 +278,9 @@
 		728C9CBF14CA9EC000D4A0EF /* provider */ = {
 			isa = PBXGroup;
 			children = (
+				72782F0214CE197600A84C35 /* cache */,
+				72782F0714CE1B4B00A84C35 /* SettingsProvider.h */,
+				72782F0814CE1B4C00A84C35 /* SettingsProvider.m */,
 				728C9CD114CAA41F00D4A0EF /* DataProvider.h */,
 				728C9CD214CAA42000D4A0EF /* DataProvider.m */,
 				728C9CC014CA9F0D00D4A0EF /* FacebookProvider.h */,
@@ -254,11 +335,13 @@
 		7299A50514B58B1B00097475 /* howdoilook */ = {
 			isa = PBXGroup;
 			children = (
+				7299A53214B58C4400097475 /* lib */,
+				72782F1514CE2C7F00A84C35 /* db */,
 				728C9CC314CAA19000D4A0EF /* data */,
 				728C9CBF14CA9EC000D4A0EF /* provider */,
-				728C9CBA14CA987F00D4A0EF /* flow */,
-				7299A53214B58C4400097475 /* lib */,
-				7299A56214B58D2700097475 /* views */,
+				728C9CBA14CA987F00D4A0EF /* navigationcontrol */,
+				72782EEE14CE167F00A84C35 /* views */,
+				7299A56214B58D2700097475 /* viewcontrollers */,
 				7299A50E14B58B1B00097475 /* AppDelegate.h */,
 				7299A50F14B58B1B00097475 /* AppDelegate.m */,
 				7299A50614B58B1B00097475 /* Supporting Files */,
@@ -355,15 +438,16 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		7299A56214B58D2700097475 /* views */ = {
+		7299A56214B58D2700097475 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				72782EEF14CE16A800A84C35 /* fashionistas */,
 				728C9CB414CA976D00D4A0EF /* default */,
 				7299A56A14B58DF700097475 /* abstract */,
 				7299A56414B58D3C00097475 /* howdoilook */,
 				7299A56314B58D3400097475 /* splash */,
 			);
-			name = views;
+			name = viewcontrollers;
 			sourceTree = "<group>";
 		};
 		7299A56314B58D3400097475 /* splash */ = {
@@ -556,6 +640,12 @@
 				728C9CD314CAA42000D4A0EF /* DataProvider.m in Sources */,
 				728C9CD614CAABC200D4A0EF /* HDILImage.m in Sources */,
 				728C9CED14CAB66600D4A0EF /* FacebookRequest.m in Sources */,
+				72782EF414CE170B00A84C35 /* PrevHDILImages.m in Sources */,
+				72782EF814CE172700A84C35 /* FashionistasSettingsView.m in Sources */,
+				72782EFC14CE175200A84C35 /* FashionistasScrollView.m in Sources */,
+				72782F0014CE177500A84C35 /* HDILImageView.m in Sources */,
+				72782F0514CE198800A84C35 /* HDILImageCache.m in Sources */,
+				72782F0914CE1B4C00A84C35 /* SettingsProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +654,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7299A52514B58B1B00097475 /* howdoilookTests.m in Sources */,
+				72782EF514CE170B00A84C35 /* PrevHDILImages.m in Sources */,
+				72782EF914CE172700A84C35 /* FashionistasSettingsView.m in Sources */,
+				72782EFD14CE175200A84C35 /* FashionistasScrollView.m in Sources */,
+				72782F0114CE177500A84C35 /* HDILImageView.m in Sources */,
+				72782F0614CE198800A84C35 /* HDILImageCache.m in Sources */,
+				72782F0A14CE1B4C00A84C35 /* SettingsProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

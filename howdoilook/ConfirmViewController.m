@@ -36,6 +36,7 @@
     MBProgressHUD *hud = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
     [self.navigationController.view addSubview:hud];
     [hud show:YES];
+    [hud release];
     
     // Post
     NSLog(@"Post to FB");
@@ -49,10 +50,13 @@
     }onFailure:^(NSError *error) {
         [MBProgressHUD hideHUDForView:self.navigationController.view animated:YES];
         NSString *message = [error localizedDescription];
-        [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        
+        UIAlertView *failureMsg = [[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [failureMsg show];
+        [failureMsg release];
     }];
 
-    
+    [hdilImage release];
 //    NSMutableDictionary *params_ = [NSMutableDictionary dictionaryWithObjectsAndKeys:
 //                                    kFBAppId, @"app_id",
 //                                    @"", @"link",
